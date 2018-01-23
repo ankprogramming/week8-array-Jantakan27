@@ -4,6 +4,37 @@ using namespace std;
 int main () {
         // สร้างตัวแปร array ชื่อ calendar เพื่อสร้างที่เก็บปฏิทิน
         // calendar[5][7]
+        int calendar[5][7];
+        int day=1;
+        for (int i=0; i<4; i++) {
+            calendar[0][i] =0;
+        }
+
+        for (int i=4; i<7; i++) {
+            calendar[0][i] = day;
+            day++;
+        }
+
+        for (int i = 1; i < 5; i++)
+        {
+            for (int j = 0; j < 7; j++)
+            {
+                calendar[i][j] = day;
+                day++;
+            }
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 7; j++)
+            {
+             cout << calendar [i][j] << " ";
+
+            }
+             cout << endl;
+        }
+
+
 
 
         // เขียนโปรแกรมแสดงปฏิทินเดือน ธันวาคม /2560
